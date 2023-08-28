@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE carnet [
+ <!ELEMENT carnet (personne)+>
+ <!ELEMENT personne (nom,prenom+,email,naissance,adresse,portable,fixe?)>
+ <!ELEMENT nom (#PCDATA) >
+ <!ELEMENT prenom (#PCDATA) >
+ <!ELEMENT email (#PCDATA) >
+  <!ELEMENT naissance (#PCDATA) >
+ <!ELEMENT portable (#PCDATA) >
+  <!ELEMENT fixe (#PCDATA) >
+ <!ELEMENT adresse (numero,rue,ville)>
+ <!ELEMENT numero (#PCDATA) >
+ <!ELEMENT rue (#PCDATA) >
+ <!ELEMENT ville (#PCDATA) >
+  <!ATTLIST personne sexe (F | M) #IMPLIED>
+ ]>
+<carnet>
+<personne sexe="F">
+<nom> Boularcha</nom>
+<prenom>Malika</prenom>
+<email>boularcha@yahoo.fr</email>
+<naissance>21/02/1985</naissance>
+<adresse>
+  <numero>54</numero>
+  <rue>rue marakech</rue>
+  <ville>oujda</ville>
+  </adresse>
+  <portable>0645785211</portable>
+  <fixe>0580245937</fixe>
+</personne>
+<personne sexe="M">
+<nom>Marzouki</nom>
+<prenom>Amin</prenom>
+<email>Marzouki@hotmail.com</email>
+<naissance>05/08/1975</naissance>
+<adresse>
+  <numero>28</numero>
+  <rue>boulevard Mohamed</rue>
+  <ville>oujda</ville>
+  </adresse>
+  <portable>0632459702</portable>
+  <fixe></fixe>
+</personne>
+<personne sexe="F">
+<nom> Azaiis</nom>
+<prenom>Amina</prenom>
+<email>azais@yahoo.fr</email>
+<naissance>16/12/1960</naissance>
+<adresse>
+  <numero>87</numero>
+  <rue>avenue Stalingrad</rue>
+  <ville>Rabat</ville>
+  </adresse>
+  <portable>0699237018</portable>
+  <fixe>0310375109</fixe>
+</personne>
+<personne sexe="M">
+<nom> Bardadi</nom>
+<prenom>Mohamed</prenom>
+<email>bardadi@hotmail.com</email>
+<naissance>15/11/1992</naissance>
+<adresse>
+  <numero>1</numero>
+  <rue>rue Pion</rue>
+  <ville>Nador</ville>
+  </adresse>
+  <portable>0600864492</portable>
+  <fixe>0380661940</fixe>
+</personne>
+</carnet>

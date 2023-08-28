@@ -1,0 +1,32 @@
+<!DOCtype html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title> carre</title>
+     <script type="text/javascript">
+       function carre(tab){
+        var t=new Array(tab.length);
+        for ( var i=0 ; i<tab.length ; i++){
+          t[i] = tab[i] * tab[i]; 
+        }
+        return t;
+         }
+     </script>
+   </head>
+  <body>
+   <script type="text/javascript" >
+    //t=prompt("donner moi la taille de tableau:");
+    var tab=new Array(3);
+    for(var i=0;i<3;i++){
+      tab[i]=prompt("seisie moi la valeur "+i+":");
+    }
+    document.write("les element de tableau est :<br>");
+    for(var i=0;i<3;i++){
+      document.write("tab["+i+"]="+tab[i]+"<br>");
+    }
+    document.write("les element carre de tableau est :<br>");
+    document.write(carre(tab).toString());
+
+    </script>
+   </body>
+</html>

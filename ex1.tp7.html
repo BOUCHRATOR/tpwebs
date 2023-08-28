@@ -1,0 +1,31 @@
+<!DOCtype html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title> calcul de n!</title>
+     <link rel="stylesheet" type="text/css" href="font.css">
+      <script type="text/javascript" >
+       function fact(n){
+
+        if(n==0){
+          return 1;
+        }
+        else {
+          return n*fact(n-1);
+        }
+       }
+    </script>
+   </head>
+  <body>
+   <script type="text/javascript">
+    <!-- 
+    do {
+      var h;
+      h=prompt ('Veuillez entrer un entier positif:');
+    }while (isNaN(h) || h<0 || h=="" || h.trim()==false);
+      let n=parseInt(h);
+    document.write('<span> Pour n = '+n+'<br>'+'n! = '+fact(n)+'<span>');
+    //-->
+    </script>
+   </body>
+</html>

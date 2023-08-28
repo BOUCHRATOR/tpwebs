@@ -1,0 +1,47 @@
+<!DOCtype html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title> horloge</title>
+     <style type="text/css">
+      input{
+        border:solid 4px;
+        margin-left: 40px;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+
+      }
+     </style>
+     <script type="text/javascript">
+       function horloge(){
+       var temp=new Date();
+       var h=temp.getHours();
+       var m=temp.getMinutes();
+       var s=temp.getSeconds();
+       if(h>12){
+        h=h-12;
+       }
+       if(h==0){
+        h=12;
+       }
+       h=add(h);
+       m=add(m);
+       s=add(s);
+       document.heur.time.value=h+":"+m+":"+s;
+       setTimeout(horloge,1000);}
+       function add(j){   
+        if(j<10){
+          return "0"+j;
+        } else {return j;}
+       }
+     </script>
+   </head>
+  <body onload="horloge()">
+   <form name="heur">
+     <input type="text" name="time" readonly>
+   </form>
+  
+    
+   </body>
+</html>

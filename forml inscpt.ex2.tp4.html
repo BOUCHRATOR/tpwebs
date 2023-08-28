@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html> 
+   <head> 
+      <meta charset="UTF-8">
+      <title> Formulaire</title> 
+   </head> 
+   <body>
+       <h2> Formulaire d'inscription</h2> 
+      <form>
+         <label> Entrez votre nom:
+            <input type="text" name="Nom"></label><br>
+               <HR>
+            <strong> Cochez la case correspondant à votre cas :</strong><br>
+            <input type="radio" name="anneé" value="M"> Moins de 18 ans<br>
+             <input type="radio" name="anneé" value="D"> De 20  à 30 ans<br>
+             <input type="radio" name="anneé" value="P"> Plus de 30 ans<br><br>
+           <b> Quels sont vos sports préférés :</b><br>
+             <select name="liste" size="4" multiple>
+                  <option value="F1"  >Football</option>
+                  <option value="F2">Golf</option>
+                  <option value="F3">Tennis</option>
+                  <option value="F4" >Cyclisme</option>
+                  <option value="F4" >Cyclisme</option>
+              </select>
+                 <hr>
+           <b> Exprimez-vous : </b><br>
+           <textarea name="text" rows="3" cols="26">A vous  </textarea><br>
+             <br> <input type="submit" value="Envoyer">
+              <button type="submit"> Annuler </button>
+       </form>
+    </body>
+</html>

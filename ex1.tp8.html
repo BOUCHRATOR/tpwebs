@@ -1,0 +1,33 @@
+<!DOCtype html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title> tiangle</title>
+     <style type="text/css">
+       input[type="checkbox"]{margin-left: 25px;}
+     </style>
+     <script type="text/javascript">
+       function verf()
+        {
+            if (document.chock.t1.checked==0 && document.chock.t2.checked==0 && document.chock.t3.checked==0 && document.chock.t4.checked==0){alert("coucher une reponce");}
+            
+          if (document.chock.t1.checked==1 || document.chock.t4.checked==1){
+            alert("la reponce est fausse!");
+          }else {alert("la reponce est bonne!");}
+        }
+     </script>
+   </head>
+  <body>
+  
+  Un triangle droit a:<br>
+   <form name="chock" action="javascript">
+   <input type="checkbox" name="t1" value="ob"> 1 angle obtus <br> 
+   <input type="checkbox" name="t2" value="dr"> 1 angle droit <br>
+   <input type="checkbox" name="t3" value="per"> 2 cote perpendiculaire <br>
+   <input type="checkbox" name="t4" value="eg"> 3 cote egaux <br>
+   <input type="button" name="verification" value="verifier" onClick="verf()">
+   <input type="reset" name="verification" value="reinitialisation">
+   </form> 
+    </script>
+   </body>
+</html>

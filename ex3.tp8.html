@@ -1,0 +1,68 @@
+<!DOCtype html>
+<html>
+   <head>
+     <meta charset="UTF-8">
+     <title> calculatrice</title>
+     <style type="text/css">
+       body{
+        margin-left: 400px;
+        margin-top: 300px;
+        background-color: blue;
+       }
+       #bou{
+        padding-left: 200px;
+
+       }
+     </style>
+     <script type="text/javascript">
+       function effectuerOperation(){
+        if(isNaN(document.t0.Op1.value)||isNaN(document.t0.Op2.value)){
+          alert("Erreur");
+          document.t0.Op1.value="";
+          document.t0.Op2.value="";
+          document.t0.va.value="";
+        }
+        else {if (document.t0.Op1.value==""||document.t0.Op2.value==""){
+          alert("Erreur !! tu doit entrer une valeur");
+        }}
+        var m;
+        m=document.t0.liste1.value;
+        switch(m){
+          case "l1":document.t0.va.value=(eval (document.t0.Op1.value) + eval(document.t0.Op2.value));break;
+          case "l2":document.t0.va.value=(eval (document.t0.Op1.value) - eval(document.t0.Op2.value));break;
+          case "l3":document.t0.va.value=(eval (document.t0.Op1.value) * eval(document.t0.Op2.value));break;
+          case"l4":document.t0.va.value=if(document.t0.Op2.value!=0){(eval (document.t0.Op1.value) / eval(document.t0.Op2.value))};break;
+        }
+      }
+       
+              var i=0;
+          function colory(){
+          var lescoleurs=["red","black","white","blue","green"];
+            document.getElementById("bou").style.color=lescoleurs[i];
+            i++; 
+        }
+          setInterval(colory,1000);
+       
+       
+     </script>
+   </head>
+  <body >
+    
+     <h1 id="bou">Calculatrice</h1>
+     <form name="t0">
+       <input type="text" name="Op1" >
+       <select name="liste1">
+        <option value="l1">+</option>
+        <option value="l2">-</option>
+        <option value="l3">*</option>
+        <option value="l4">/</option>
+       </select>
+        <input type="text" name="Op2" >
+         <button type="button"  onclick="effectuerOperation()"> = </button>
+          <input type="text" name="va" readonly>
+           <input type="reset" name="reinitialisation" value="reinitialisation">
+     </form>
+  
+    </script>
+   </body>
+</html>

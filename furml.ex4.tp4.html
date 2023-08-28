@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html> 
+   <head> 
+      <meta charset="UTF-8">
+        <title> Formulaire</title> 
+    </head> 
+ <body> 
+  <form>
+      <fieldset> 
+           <legend> Coordonnées:</legend>  
+    <label> Nom:
+       <input type="text" name="Nom"></label><br>
+    <label> Prénom:
+       <input type="text" name="Prénom"></label><br>
+    <label> Adresse:
+       <input type="text" name="Adresse"></label><br>
+    <label> CP:
+       <input type="text" name="CP" size="6"></label>
+    <label> Ville:
+       <input type="text" name="Ville"></label><br>
+    <label> Pays:
+       <input type="texte name="Pays"></label><br>
+    <label> Email:
+       <input type="text" name="Email" size="31"></label><br>
+      </fieldset>
+   <fieldset> 
+       <legend> Connexion:</legend>
+         <input type="radio" name="genre" value="M" >Modem<br>
+         <input type="radio" name="genre" value="A" >ADLS<br>
+         <input type="radio" name="genre" value="C" >Cable<br>
+   </fieldset>
+     <fieldset>
+       <legend> Commentaire: </legend>
+          <textarea name="text" rows="5" cols="30"></textarea>
+     </fieldset><br>
+         <input type="submit" value="Envoyer">
+         <button type="submit">Effacer</button>
+  </form>
+ </body>
+</html>
