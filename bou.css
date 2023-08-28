@@ -1,0 +1,23 @@
+b {
+   font-size: 20px;
+   font-family:arial;
+}
+#t1{
+   color:red;
+}
+#t2{
+   color:green;
+}
+h1{
+   color: pink;
+   margin:30px;
+   padding-center:10px;
+}
+div{
+   border: solid 1px;
+   width: 505px;
+   hieght: 1000 px;
+   background-color:purple;
+   margin:20px;
+   padding-left:20px;
+}
